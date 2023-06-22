@@ -1,0 +1,48 @@
+/* ============
+1100px
+============*/
+@media (max-width: 1100px) {
+  .search_area .search {
+    width: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    column-gap: 0px;
+  }
+  .search_area .search span {
+    font-size: 24px;
+  }
+  .search_area .search input {
+    display: none;
+  }
+  .menu_area ul li:nth-child(5) {
+    display: none;
+  }
+  .menu_area ul li:nth-child(6){
+    display: block;
+   }
+  .profile_area ul li:nth-child(1){
+    display: inline-block;
+  }
+  .profile_area ul li:nth-child(2){
+    display: none;
+  }
+}
+/* ==============
+900px
+==================*/
+@media (max-width:900px) {
+    .menu_area ul li a {
+        width: 75px;
+      }
+}
+/* ===============
+700px
+==================*/
+@media (max-width:700px) {
+    .search_area .menu_bars{
+        display: flex;
+    }
+    .menu_area ul {
+        display: none;
+      }
+}

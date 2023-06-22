@@ -1,0 +1,222 @@
+/* ================================
+    common css
+====================================*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: segoe ui historic;
+  src: url(../fonts/Segoe\ ui\ historic.ttf);
+}
+body,
+button,
+form input,
+select,
+select option {
+  font-family: segoe ui historic;
+}
+.center {
+  display: flex;
+  align-items: center;
+}
+body {
+  background-color: #f0f2f5;
+}
+/* ================================
+    header style
+====================================*/
+#header_section {
+  justify-content: space-between;
+  height: 56px;
+  width: 100%;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+  padding: 0 15px;
+  box-shadow: 2px 0 10px #66656540;
+}
+.search_area {
+  column-gap: 15px;
+}
+.search_area .logo {
+  height: 40px;
+  width: 40px;
+}
+.search_area .logo a img {
+  width: 100%;
+  height: 100%;
+}
+.search_area .search {
+  column-gap: 8px;
+  width: 240px;
+  height: 40px;
+  background-color: #f0f2f5;
+  border-radius: 25px;
+  padding: 10px;
+}
+.search_area .search span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #606770;
+}
+.search_area .search input {
+  border: none;
+  outline: none;
+  background: none;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #050505;
+}
+.search_area .search input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #050505;
+}
+.search_area .menu_bars {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  color: #606266;
+  font-size: 24px;
+  transition: 0.3s;
+  position: relative;
+}
+.search_area .menu_bars:hover {
+  background-color: #f2f2f2;
+}
+.search_area .menu_bars::after {
+  content: attr(data-bars_tooltip);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 15px 5px 15px;
+  border-radius: 10px;
+  background-color: #3c3c3c;
+  color: #e4e6eb;
+  font-size: 13px;
+  transition: 0.3s;
+  display: none;
+}
+.search_area .menu_bars:hover::after {
+  display: inline-block;
+}
+/* menu */
+.menu_area ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 50px;
+  border-radius: 10px;
+  color: #606266;
+  font-size: 24px;
+  transition: 0.3s;
+  position: relative;
+}
+.menu_area ul li a:hover {
+  background-color: #f2f2f2;
+}
+.menu_area ul li a::after {
+  content: attr(data-menu_tooltip);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 15px 5px 15px;
+  border-radius: 10px;
+  background-color: #3c3c3c;
+  color: #e4e6eb;
+  font-size: 13px;
+  transition: 0.3s;
+  display: none;
+}
+.menu_area ul li a:hover::after {
+  display: inline-block;
+}
+.menu_area ul li:nth-child(1) {
+  border-bottom: 3px solid #1b74e4;
+  height: 56px;
+}
+.menu_area ul li:nth-child(1) a {
+  color: #1b74e4;
+}
+.menu_area ul li:nth-child(1) a:hover{
+  background-color: unset;
+}
+.menu_area ul li a .groups {
+  border: 2px solid #606266;
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.menu_area ul li:nth-child(2) a span {
+  font-size: 30px;
+}
+.menu_area ul li:nth-child(5) a span {
+  font-size: 30px;
+}
+.menu_area ul li:nth-child(6) {
+  display: none;
+}
+/* profile */
+.profile_area ul {
+  column-gap: 10px;
+}
+.profile_area ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e6eb;
+  border-radius: 50%;
+  color: #050505;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  font-weight: 900;
+  transition: 0.3s;
+  position: relative;
+}
+.profile_area ul li:nth-child(1) {
+  display: none;
+}
+.profile_area ul li a:hover {
+  background-color: #d8dadf;
+}
+.profile_area ul li a::after {
+  content: attr(data-profile_tooltip);
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 15px 5px 15px;
+  border-radius: 10px;
+  background-color: #3c3c3c;
+  color: #e4e6eb;
+  font-size: 13px;
+  font-weight: normal;
+  transition: 0.3s;
+  display: none;
+}
+.profile_area ul li a.account::after {
+  left: 0px;
+}
+.profile_area ul li a:hover::after {
+  display: inline-block;
+}
+.profile_area ul li a img {
+  border-radius: 50%;
+}
