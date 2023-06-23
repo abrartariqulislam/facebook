@@ -43,6 +43,9 @@ body {
   scroll-behavior: smooth;
   padding: 0 15px;
   box-shadow: 2px 0 10px #66656540;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .search_area {
   column-gap: 15px;
@@ -62,6 +65,7 @@ body {
   background-color: #f0f2f5;
   border-radius: 25px;
   padding: 10px;
+  cursor: pointer;
 }
 .search_area .search span {
   font-size: 16px;
@@ -82,7 +86,7 @@ body {
   font-weight: 400;
   color: #050505;
 }
-.search_area .menu_bars {
+.search_area .menu_bars a {
   display: none;
   align-items: center;
   justify-content: center;
@@ -94,10 +98,10 @@ body {
   transition: 0.3s;
   position: relative;
 }
-.search_area .menu_bars:hover {
+.search_area .menu_bars a:hover {
   background-color: #f2f2f2;
 }
-.search_area .menu_bars::after {
+.search_area .menu_bars a::after {
   content: attr(data-bars_tooltip);
   position: absolute;
   bottom: -30px;
@@ -111,7 +115,7 @@ body {
   transition: 0.3s;
   display: none;
 }
-.search_area .menu_bars:hover::after {
+.search_area .menu_bars a:hover::after {
   display: inline-block;
 }
 /* menu */
@@ -154,7 +158,7 @@ body {
 .menu_area ul li:nth-child(1) a {
   color: #1b74e4;
 }
-.menu_area ul li:nth-child(1) a:hover{
+.menu_area ul li:nth-child(1) a:hover {
   background-color: unset;
 }
 .menu_area ul li a .groups {
@@ -175,6 +179,10 @@ body {
 /* profile */
 .profile_area ul {
   column-gap: 10px;
+}
+.profile_area ul {
+  width: 310px;
+  justify-content: flex-end;
 }
 .profile_area ul li a {
   display: flex;
@@ -219,4 +227,131 @@ body {
 }
 .profile_area ul li a img {
   border-radius: 50%;
+}
+/* ================================
+  aside left side style
+===================================*/
+main {
+  max-width: 1464px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.left_side,
+.right_side {
+  height: 100vh;
+  flex-basis: 25%;
+  padding: 70px 8px 8px 8px;
+  overflow: auto;
+}
+.left_side .side_menu ul li a,
+.shortcut_menu {
+  height: 52px;
+  color: #050505;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  column-gap: 15px;
+  border-radius: 8px;
+  padding: 0 8px;
+  transition: 0.3s;
+}
+.left_side .side_menu ul li a:hover,
+.shortcut_menu:hover {
+  background-color: #e4e6e9;
+}
+.left_side .side_menu ul li a img,
+.shortcut_menu img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+.left_side .side_menu ul li a .up_arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #e4e6eb;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: unset;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bcc0c4;
+  border-radius: 25px;
+  display: none;
+}
+.left_side:hover::-webkit-scrollbar-thumb {
+  display: block;
+}
+/* tract on hover */
+::-webkit-scrollbar-track:hover {
+  background: #bcc0c44b;
+}
+/* shortcuts */
+.separate {
+  width: 100%;
+  height: 1px;
+  background-color: #bcc0c4;
+  margin: 10px 0;
+}
+.shortcuts .shortcuts_title {
+  justify-content: space-between;
+}
+.shortcuts .shortcuts_title h3 {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #65676b;
+  height: 52px;
+}
+.shortcuts .shortcuts_title .edit_btn {
+  background: unset;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: unset;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #216fdb;
+  cursor: pointer;
+  display: none;
+}
+.shortcuts .shortcuts_title .edit_btn:hover {
+  background-color: #e4e6e9;
+}
+.shortcuts:hover .edit_btn {
+  display: inline-block;
+}
+.left_side .left_footer {
+  margin: 30px 0;
+}
+.left_side .left_footer a {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #65676b;
+}
+.left_side .left_footer a span{
+  transform: translateY(10px);
+  font-size: 28px;
+}
+/* ================================
+  middle section style
+===================================*/
+.middle_section {
+  height: 100vh;
+  flex-basis: 50%;
+  background-color: orange;
 }

@@ -1,3 +1,15 @@
+/* ===============
+1200px
+========================*/
+@media (max-width: 1200px) {
+  /* header */
+  .search_area .search{
+    width: 190px;
+  }
+  .profile_area ul{
+    width: 260px;
+  }
+}
 /* ============
 1100px
 ============*/
@@ -17,32 +29,55 @@
   .menu_area ul li:nth-child(5) {
     display: none;
   }
-  .menu_area ul li:nth-child(6){
+  .menu_area ul li:nth-child(6) {
     display: block;
-   }
-  .profile_area ul li:nth-child(1){
+  }
+  .profile_area ul li:nth-child(1) {
     display: inline-block;
   }
-  .profile_area ul li:nth-child(2){
+  .profile_area ul li:nth-child(2) {
     display: none;
   }
+  .profile_area ul{
+    width: unset;
+  }
+  /* aside left side */
+  .left_side{
+    display: none;
+  }
+  .right_side{
+    flex-basis: 30%;
+  }
+  .middle_section {
+    flex-basis:70%;
+  }
+
 }
 /* ==============
 900px
 ==================*/
-@media (max-width:900px) {
-    .menu_area ul li a {
-        width: 75px;
-      }
+@media (max-width: 900px) {
+  .menu_area ul li a {
+    width: 75px;
+  }
+  /* aside left side */
+  .right_side{
+    display: none;
+  }
+  .middle_section {
+    margin: 0 auto;
+    max-width: 680px;
+    flex-basis:100%;
+  }
 }
 /* ===============
 700px
 ==================*/
-@media (max-width:700px) {
-    .search_area .menu_bars{
-        display: flex;
-    }
-    .menu_area ul {
-        display: none;
-      }
+@media (max-width: 700px) {
+  .search_area .menu_bars a {
+    display: flex;
+  }
+  .menu_area ul {
+    display: none;
+  }
 }
