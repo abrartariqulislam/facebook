@@ -334,6 +334,9 @@ main {
 .shortcuts:hover .edit_btn {
   display: inline-block;
 }
+.shortcuts ul li .shortcut_menu {
+  font-weight: 600;
+}
 .left_side .left_footer {
   margin: 30px 0;
 }
@@ -343,7 +346,7 @@ main {
   font-weight: 400;
   color: #65676b;
 }
-.left_side .left_footer a span{
+.left_side .left_footer a span {
   transform: translateY(10px);
   font-size: 28px;
 }
@@ -354,4 +357,54 @@ main {
   height: 100vh;
   flex-basis: 50%;
   background-color: orange;
+}
+/* ================================
+  righr side style
+===================================*/
+.right_side .page_menu .page_menu_title {
+  justify-content: space-between;
+}
+.right_side .page_menu .page_menu_title h3 {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #65676b;
+  height: 52px;
+}
+.right_side .page_menu .page_menu_title i {
+  padding: 10px;
+  border-radius: 50%;
+}
+.right_side .page_menu .page_menu_title i:hover {
+  background-color: #e4e6e9;
+}
+.right_side .page_menu ul li a {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #65676b;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.right_side .page_menu ul li a:hover {
+  background-color: #e4e6e9;
+}
+.right_side .page_menu ul li:nth-child(1) a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #050505;
+  padding: 10px 10px;
+}
+.right_side .page_menu ul li a img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.right_side .page_menu ul li a i {
+  font-size: 24px;
+  margin-right: 15px;
 }

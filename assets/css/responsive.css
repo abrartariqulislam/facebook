@@ -3,10 +3,10 @@
 ========================*/
 @media (max-width: 1200px) {
   /* header */
-  .search_area .search{
+  .search_area .search {
     width: 190px;
   }
-  .profile_area ul{
+  .profile_area ul {
     width: 260px;
   }
 }
@@ -38,20 +38,19 @@
   .profile_area ul li:nth-child(2) {
     display: none;
   }
-  .profile_area ul{
+  .profile_area ul {
     width: unset;
   }
   /* aside left side */
-  .left_side{
+  .left_side {
     display: none;
   }
-  .right_side{
+  .right_side {
     flex-basis: 30%;
   }
   .middle_section {
-    flex-basis:70%;
+    flex-basis: 70%;
   }
-
 }
 /* ==============
 900px
@@ -61,13 +60,13 @@
     width: 75px;
   }
   /* aside left side */
-  .right_side{
+  .right_side {
     display: none;
   }
   .middle_section {
     margin: 0 auto;
     max-width: 680px;
-    flex-basis:100%;
+    flex-basis: 100%;
   }
 }
 /* ===============
