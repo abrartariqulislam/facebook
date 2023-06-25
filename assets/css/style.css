@@ -302,12 +302,12 @@ main {
   width: 100%;
   height: 1px;
   background-color: #bcc0c4;
-  margin: 10px 0;
+  margin: 10px 0 5px 0;
 }
-.shortcuts .shortcuts_title {
+.shortcuts .shortcuts_title ,.friend_request_title{
   justify-content: space-between;
 }
-.shortcuts .shortcuts_title h3 {
+.shortcuts .shortcuts_title h3 ,.friend_request_title h3{
   display: flex;
   align-items: center;
   font-size: 17px;
@@ -316,7 +316,7 @@ main {
   color: #65676b;
   height: 52px;
 }
-.shortcuts .shortcuts_title .edit_btn {
+.shortcuts .shortcuts_title .edit_btn, .see_al_btn{
   background: unset;
   padding: 10px 15px;
   border-radius: 6px;
@@ -328,7 +328,7 @@ main {
   cursor: pointer;
   display: none;
 }
-.shortcuts .shortcuts_title .edit_btn:hover {
+.shortcuts .shortcuts_title .edit_btn:hover ,.see_al_btn:hover {
   background-color: #e4e6e9;
 }
 .shortcuts:hover .edit_btn {
@@ -359,7 +359,7 @@ main {
   background-color: orange;
 }
 /* ================================
-  righr side style
+  right side style
 ===================================*/
 .right_side .page_menu .page_menu_title {
   justify-content: space-between;
@@ -408,3 +408,96 @@ main {
   font-size: 24px;
   margin-right: 15px;
 }
+/* friends request */
+.friend_request .friend_request_title .see_al_btn{
+  display: block;
+}
+.friend_request .friends_request_content {
+  align-items: flex-start;
+  column-gap: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.friend_request .friends_request_content:hover{
+  background-color: #E4E6E9;
+}
+.friend_request .friends_request_content img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.friend_request .friends_request_content .friend_content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #050505;
+  margin-bottom: 5px;
+}
+.friend_request .friends_request_content .friend_content .friend_details {
+  position: relative;
+  z-index: 1;
+}
+.friend_request
+  .friends_request_content
+  .friend_content
+  .friend_details
+  .shakib {
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  z-index: -1;
+}
+.friend_request .friends_request_content .friend_content .friend_details img {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #f0f2f5;
+}
+.friend_request .friends_request_content .friend_content .friend_details p {
+  margin-left: 25px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #65676b;
+}
+.friend_request .friends_request_content .friend_content .friend_btn {
+  column-gap: 10px;
+  margin: 10px 0 0 0;
+}
+.friend_request
+  .friends_request_content
+  .friend_content
+  .friend_btn
+  .confirm_btn {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #1a6ed8;
+  padding: 9px 15px 11px 15px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  border: none;
+}
+.friend_request
+  .friends_request_content
+  .friend_content
+  .friend_btn
+  .delete_btn {
+  border: none;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  background: #e4e6eb;
+  color: #050505;
+  padding: 10px 20px 12px 20px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+}
+.friend_request
+  .friends_request_content
+  .friend_content
+  .friend_btn
+  .delete_btn:hover {
+  background: #d8dadf;
+}
+
