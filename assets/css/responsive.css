@@ -9,6 +9,21 @@
   .profile_area ul {
     width: 260px;
   }
+  /* right side */
+  .friend_request
+    .friends_request_content
+    .friend_content
+    .friend_btn
+    .confirm_btn {
+    padding: 9px 8px 11px 8px;
+  }
+  .friend_request
+    .friends_request_content
+    .friend_content
+    .friend_btn
+    .delete_btn {
+    padding: 10px 10px 12px 10px;
+  }
 }
 /* ============
 1100px

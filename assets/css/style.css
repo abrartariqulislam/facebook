@@ -302,21 +302,26 @@ main {
   width: 100%;
   height: 1px;
   background-color: #bcc0c4;
-  margin: 10px 0 5px 0;
+  margin-top: 10px;
 }
-.shortcuts .shortcuts_title ,.friend_request_title{
+.shortcuts .shortcuts_title,
+.friend_request_title {
   justify-content: space-between;
 }
-.shortcuts .shortcuts_title h3 ,.friend_request_title h3{
+.shortcuts .shortcuts_title h3,
+.friend_request_title h3,
+.Birth_day h3,
+.contact_title h3 {
   display: flex;
   align-items: center;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 18px;
   font-weight: 600;
   color: #65676b;
   height: 52px;
 }
-.shortcuts .shortcuts_title .edit_btn, .see_al_btn{
+.shortcuts .shortcuts_title .edit_btn,
+.see_al_btn {
   background: unset;
   padding: 10px 15px;
   border-radius: 6px;
@@ -328,7 +333,8 @@ main {
   cursor: pointer;
   display: none;
 }
-.shortcuts .shortcuts_title .edit_btn:hover ,.see_al_btn:hover {
+.shortcuts .shortcuts_title .edit_btn:hover,
+.see_al_btn:hover {
   background-color: #e4e6e9;
 }
 .shortcuts:hover .edit_btn {
@@ -361,6 +367,28 @@ main {
 /* ================================
   right side style
 ===================================*/
+/* width */
+.right_side::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+.right_side::-webkit-scrollbar-track {
+  background: unset;
+}
+
+/* Handle */
+.right_side::-webkit-scrollbar-thumb {
+  background: #bcc0c4;
+  border-radius: 25px;
+  display: none;
+}
+.right_side:hover::-webkit-scrollbar-thumb {
+  display: block;
+}
+/* tract on hover */
+.right_side::-webkit-scrollbar-track:hover {
+  background: #bcc0c44b;
+}
 .right_side .page_menu .page_menu_title {
   justify-content: space-between;
 }
@@ -409,7 +437,7 @@ main {
   margin-right: 15px;
 }
 /* friends request */
-.friend_request .friend_request_title .see_al_btn{
+.friend_request .friend_request_title .see_al_btn {
   display: block;
 }
 .friend_request .friends_request_content {
@@ -417,9 +445,10 @@ main {
   column-gap: 15px;
   padding: 10px;
   border-radius: 10px;
+  cursor: pointer;
 }
-.friend_request .friends_request_content:hover{
-  background-color: #E4E6E9;
+.friend_request .friends_request_content:hover {
+  background-color: #e4e6e9;
 }
 .friend_request .friends_request_content img {
   height: 60px;
@@ -473,10 +502,11 @@ main {
   font-weight: 600;
   color: #ffffff;
   background: #1a6ed8;
-  padding: 9px 15px 11px 15px;
+  padding: 9px 12px 11px 12px;
   border-radius: 6px;
   letter-spacing: 1px;
   border: none;
+  cursor: pointer;
 }
 .friend_request
   .friends_request_content
@@ -489,9 +519,10 @@ main {
   font-weight: 600;
   background: #e4e6eb;
   color: #050505;
-  padding: 10px 20px 12px 20px;
+  padding: 10px 15px 12px 15px;
   border-radius: 6px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 .friend_request
   .friends_request_content
@@ -500,4 +531,100 @@ main {
   .delete_btn:hover {
   background: #d8dadf;
 }
-
+/* birthdays */
+.Birth_day .birth_content {
+  align-items: flex-start;
+  column-gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Birth_day .birth_content:hover {
+  background-color: #e4e6e9;
+}
+.Birth_day .birth_content p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #050505;
+}
+.Birth_day .birth_content p span {
+  font-weight: 600;
+}
+/* contact */
+.contact .contact_title {
+  justify-content: space-between;
+}
+.contact .contact_title .contact_icon {
+  column-gap: 5px;
+}
+.contact .contact_title .contact_icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #65676b;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  position: relative;
+}
+.contact .contact_title .contact_icon a::after {
+  content: attr(data-contact-tooltip);
+  position: absolute;
+  top: 36px;
+  right: 0;
+  padding: 10px 10px 12px 10px;
+  background-color: #050505;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  display: none;
+  white-space: nowrap;
+}
+.contact .contact_title .contact_icon a:hover {
+  background-color: #e4e6e9;
+}
+.contact .contact_title .contact_icon a:hover::after {
+  display: block;
+}
+.contact .contact_box a {
+  column-gap: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  position: relative;
+}
+.contact .contact_box a::after {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  left: 36px;
+  height: 12px;
+  width: 12px;
+  background-color: #31a24c;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+.contact .contact_box a:hover {
+  background-color: #e4e6e9;
+}
+.contact .contact_box a img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+.story_active_effect {
+  border: 2px solid #ffffff;
+  outline: 2px solid #1b74e4;
+}
+.story_inactive_effect {
+  border: 2px solid #ffffff;
+  outline: 2px solid #c2c2c5;
+}
+.contact .contact_box a h4 {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #050505;
+}
