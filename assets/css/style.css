@@ -311,7 +311,8 @@ main {
 .shortcuts .shortcuts_title h3,
 .friend_request_title h3,
 .Birth_day h3,
-.contact_title h3 {
+.contact_title h3,
+.groups h3 {
   display: flex;
   align-items: center;
   font-size: 17px;
@@ -415,6 +416,7 @@ main {
   color: #65676b;
   padding: 10px 20px;
   border-radius: 10px;
+  transition: 0.3s;
 }
 .right_side .page_menu ul li a:hover {
   background-color: #e4e6e9;
@@ -446,6 +448,7 @@ main {
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .friend_request .friends_request_content:hover {
   background-color: #e4e6e9;
@@ -539,6 +542,7 @@ main {
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .Birth_day .birth_content:hover {
   background-color: #e4e6e9;
@@ -568,6 +572,7 @@ main {
   height: 36px;
   width: 36px;
   position: relative;
+  transition: 0.3s;
 }
 .contact .contact_title .contact_icon a::after {
   content: attr(data-contact-tooltip);
@@ -582,6 +587,7 @@ main {
   font-weight: 400;
   display: none;
   white-space: nowrap;
+  transition: 0.3s;
 }
 .contact .contact_title .contact_icon a:hover {
   background-color: #e4e6e9;
@@ -589,13 +595,17 @@ main {
 .contact .contact_title .contact_icon a:hover::after {
   display: block;
 }
-.contact .contact_box a {
+.contact .contact_box a,
+.groupbox a,
+.group_btn a {
   column-gap: 15px;
   padding: 10px;
   border-radius: 6px;
   position: relative;
+  transition: 0.3s;
 }
-.contact .contact_box a::after {
+.contact .contact_box a::after,
+.groupbox a::after {
   content: "";
   position: absolute;
   bottom: 9px;
@@ -606,10 +616,13 @@ main {
   border-radius: 50%;
   border: 2px solid #ffffff;
 }
-.contact .contact_box a:hover {
+.contact .contact_box a:hover,
+.groupbox a:hover,
+.group_btn a:hover {
   background-color: #e4e6e9;
 }
-.contact .contact_box a img {
+.contact .contact_box a img,
+.groupbox a img {
   height: 36px;
   width: 36px;
   border-radius: 50%;
@@ -622,9 +635,46 @@ main {
   border: 2px solid #ffffff;
   outline: 2px solid #c2c2c5;
 }
-.contact .contact_box a h4 {
+.contact .contact_box a h4,
+.groupbox a h4,
+.group_btn a {
   font-size: 15px;
   line-height: 20px;
   font-weight: 600;
   color: #050505;
+}
+.group_btn span {
+  padding: 5px;
+  background-color: #d8dadf;
+  border-radius: 50%;
+}
+.group_btn .massage_btn {
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+.group_btn .massage_btn::after {
+  content: "New massage";
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  padding: 5px 10px 7px 10px;
+  background-color: #050505;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  display: none;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+.group_btn .massage_btn:hover::after {
+  display: block;
+}
+.group_btn .massage_btn:hover {
+  background-color: #f2f2f2;
 }
