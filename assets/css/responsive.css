@@ -94,4 +94,35 @@
   .menu_area ul {
     display: none;
   }
+  /* middle */
+  .middle_section {
+    padding: 80px 0px 0 0px;
+  }
+  .story_Wrapper .story {
+    flex-basis: 25%;
+  }
+  .story_Wrapper .story.story_4 {
+    border-radius: 0%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .story_Wrapper .story.story_5 {
+    display: none;
+  }
+}
+/* ===============
+500px
+==================*/
+@media (max-width: 500px) {
+  .story_Wrapper .story {
+    flex-basis: 33.3333%;
+  }
+  .story_Wrapper .story.story_4 {
+    display: none;
+  }
+  .story_Wrapper .story.story_3 {
+    border-radius: 0%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
