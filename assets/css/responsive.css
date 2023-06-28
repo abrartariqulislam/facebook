@@ -125,4 +125,16 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
+  /* create post */
+  .create_post .create_post_category {
+    column-gap: 5px;
+  }
+  .create_post .create_post_category div img{
+    height: 18px;
+    width: 18px;
+  }
+  .create_post .create_post_category div h4{
+    font-size: 13px;
+    line-height: 15px;
+  }
 }
