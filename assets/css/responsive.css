@@ -129,12 +129,24 @@
   .create_post .create_post_category {
     column-gap: 5px;
   }
-  .create_post .create_post_category div img{
+  .create_post .create_post_category div img {
     height: 18px;
     width: 18px;
   }
-  .create_post .create_post_category div h4{
+  .create_post .create_post_category div h4 {
     font-size: 13px;
     line-height: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .search_area {
+    column-gap: 5px;
+  }
+  .search_area .menu_bars a {
+    height: 30px;
+    width: 30px;
+  }
+  .profile_area ul li:nth-child(1) a {
+    display: none;
   }
 }
