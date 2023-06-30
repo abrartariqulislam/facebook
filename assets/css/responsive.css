@@ -137,6 +137,9 @@
     font-size: 13px;
     line-height: 15px;
   }
+  .counting p span{
+    display: none;
+  }
 }
 @media (max-width: 400px) {
   .search_area {
@@ -148,5 +151,18 @@
   }
   .profile_area ul li:nth-child(1) a {
     display: none;
+  }
+  .create_post .create_post_text form input{
+    font-size: 13px;
+  }
+  .create_post .create_post_category div h4 span{
+    display: none;
+  }
+  .post_area .like .like_icon a{
+    column-gap: 5px;
+    font-size: 13px;
+  }
+  .post_area .like .like_icon a i{
+    font-size: 15px;
   }
 }
