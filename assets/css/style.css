@@ -247,9 +247,8 @@ main {
   top: 0px;
   left: 0px;
   bottom: 0px;
-  
 }
-.left_side .side_menu{
+.left_side .side_menu {
   margin-bottom: 10px;
 }
 .left_side .side_menu ul li a,
@@ -369,7 +368,7 @@ main {
 ===================================*/
 .middle_section {
   flex-basis: 50%;
-  padding: 80px 32px 0 32px;
+  padding: 80px 32px 50px 32px;
   z-index: 1;
 }
 .story_Wrapper {
@@ -655,7 +654,7 @@ main {
 .active_icon::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: 4px;
   right: 0px;
   height: 12px;
   width: 12px;
@@ -735,9 +734,9 @@ main {
 /* React and comment */
 .post_area .counting {
   justify-content: space-between;
-  padding:10px 15px;
+  padding: 10px 15px;
 }
-.post_area .counting .like_counting{
+.post_area .counting .like_counting {
   column-gap: 10px;
 }
 .post_area .counting .like_counting .emoji img {
@@ -746,35 +745,39 @@ main {
   width: 18px;
   height: 18px;
 }
-.post_area .counting .like_counting .emoji img.like_emoji{
+.post_area .counting .like_counting .emoji img.like {
   z-index: 2;
 }
-.post_area .counting .like_counting .emoji img.love{
+.post_area .counting .like_counting .emoji img.love {
   transform: translateX(-3px);
   z-index: 1;
 }
-.post_area .counting .like_counting .emoji img.care{
+.post_area .counting .like_counting .emoji img.care {
   transform: translateX(-7px);
 }
-.post_area .counting .like_counting .emoji + p{
+.post_area .counting .like_counting .emoji + p {
   transform: translateX(-10px);
 }
-.post_area .counting p{
+.post_area .counting p {
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
   color: #65676b;
 }
-.post_area .like{
+.post_area .like_area {
   justify-content: space-between;
   column-gap: 15px;
-  padding: 5px 15px;
+  margin: 0 15px;
+  padding: 5px 0;
+  position: relative;
+  border-top: 1px solid #bcc0c4;
+  border-bottom: 1px solid #bcc0c4;
 }
-.post_area .like .like_icon{
+.post_area .like_area .like_icon {
   justify-content: center;
   flex-grow: 1;
 }
-.post_area .like .like_icon a{
+.post_area .like_area .like_icon a {
   flex-basis: 33.3333%;
   display: flex;
   align-items: center;
@@ -786,84 +789,110 @@ main {
   color: #65676b;
   padding: 5px 0;
   border-radius: 6px;
-  transition: 0.3s;
+  position: relative;
 }
-.post_area .like .like_icon a:hover{
-  background-color: #F2F2F2;
+.post_area .like_area .like_icon a .like_tooltip {
+  column-gap: 5px;
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  z-index: 3;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 3px #00000067;
+  display: none;
+  white-space: nowrap;
 }
-.post_area .like .like_icon a:nth-child(1){
-  color: #1a6ed8;
+.post_area .like_area .like_icon a .like_tooltip img {
+  height: 36px;
+  width: 36px;
 }
-.post_area .like .like_icon a i{
+.post_area .like_area .like_icon a.like_icon_tooltip:hover .like_tooltip {
+  display: block;
+}
+.post_area .like_area .like_icon a:hover {
+  background-color: #f2f2f2;
+}
+.post_area .like_area .like_icon a i {
   font-size: 18px;
 }
-.post_area .like .like_icon a.massage i{
+.post_area .like_area .like_icon a.massage i {
   transform: translateY(2px);
 }
-.post_area .like .like_profile a{
+.post_area .like_area .like_profile a {
   column-gap: 5px;
 }
-.post_area .like .like_profile a img{
+.post_area .like_area .like_profile a img {
   height: 20px;
   width: 20px;
   border-radius: 50%;
 }
-.post_area .like .like_profile a i{
+.post_area .like_area .like_profile a i {
   font-size: 15px;
   color: #65676b;
   transform: translateY(-2px);
 }
+#like_blue {
+  color: #1a6ed8;
+}
+#love_red {
+  color: #fd5d79;
+}
+#care_yellow {
+  color: #fed55a;
+}
 /* comment area */
-.comment_area{
+.post_area .comment_area {
   padding: 10px 15px;
   column-gap: 5px;
   z-index: 1;
 }
-.comment_area .comment_profile img{
+.post_area .comment_area .comment_profile img {
   height: 32px;
   width: 32px;
   border-radius: 50%;
 }
-.comment_area .comment_box{
+.post_area .comment_area .comment_box {
   flex-grow: 1;
-  background-color: #F0F2F5;
-  padding:8px 12px;
+  background-color: #f0f2f5;
+  padding: 8px 12px;
   border-radius: 25px;
 }
-.comment_area .comment_box form{
+.post_area .comment_area .comment_box form {
   flex-basis: 50%;
 }
-.comment_area .comment_box form input{
+.post_area .comment_area .comment_box form input {
   width: 100%;
   border: unset;
   background: unset;
-  color:#050505;
+  color: #050505;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
 }
-input:focus{
+input:focus {
   outline: unset;
 }
-.comment_area .comment_box ul{
+.post_area .comment_area .comment_box ul {
   flex-basis: 50%;
   justify-content: flex-end;
   column-gap: 10px;
   transform: translateY(2px);
 }
-.comment_area .comment_box .gif{
+.post_area .comment_area .comment_box .gif {
   border: 1px solid #050505;
   border-radius: 6px;
   height: 15px;
   width: 15px;
- display: flex;
- align-items: center;
- justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.comment_area .comment_box ul li a{
+.post_area .comment_area .comment_box ul li a {
   position: relative;
 }
-.comment_area .comment_box ul li a::after{
+.post_area .comment_area .comment_box ul li a::after {
   content: attr(data-comment_tooltip);
   position: absolute;
   top: -31px;
@@ -878,10 +907,10 @@ input:focus{
   display: none;
   transition: 0.3s;
 }
-.comment_area .comment_box ul li a:hover::after{
+.post_area .comment_area .comment_box ul li a:hover::after {
   display: block;
 }
-.comment_area .comment_box ul li a span{
+.post_area .comment_area .comment_box ul li a span {
   font-size: 18px;
   color: #050505;
 }
@@ -920,7 +949,7 @@ input:focus{
 .right_side::-webkit-scrollbar-track:hover {
   background: #bcc0c44b;
 }
-.right_side .page_menu{
+.right_side .page_menu {
   margin-bottom: 10px;
 }
 .right_side .page_menu .page_menu_title {
@@ -1130,7 +1159,7 @@ input:focus{
 .contact .contact_title .contact_icon a:hover::after {
   display: block;
 }
-.contact .contact_content{
+.contact .contact_content {
   margin-bottom: 10px;
 }
 .contact .contact_box a,

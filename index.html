@@ -405,6 +405,7 @@
             </div>
           </div>
         </div>
+        <!-- 1st post -->
         <div class="post_area">
           <div class="post_title center">
             <div class="post_profile center">
@@ -446,7 +447,11 @@
           <div class="counting center">
             <div class="like_counting center">
               <div class="emoji center">
-                <img src="assets/images/post_img/like.png" alt="" class="like_emoji" />
+                <img
+                  src="assets/images/post_img/like.png"
+                  alt=""
+                  class="like"
+                />
                 <img
                   src="assets/images/post_img/love.png"
                   alt=""
@@ -464,13 +469,20 @@
               <p>2 comments</p>
             </div>
           </div>
-          <div class="separate"></div>
-          <div class="like center">
+          <div class="like_area center">
             <div class="like_icon center">
-              <a href="/">
+              <a href="/" id="like_blue" class="like_icon_tooltip">
                 <i class="fa-regular fa-thumbs-up"></i>
                 Like
-                <a href="/" class="choose-react"></a>
+                <div class="like_tooltip center">
+                  <img src="assets/images/post_img/like.png" alt="" />
+                  <img src="assets/images/post_img/love.png" alt="" />
+                  <img src="assets/images/post_img/care.png" alt="" />
+                  <img src="assets/images/post_img/haha.png" alt="" />
+                  <img src="assets/images/post_img/wow.png" alt="" />
+                  <img src="assets/images/post_img/sad.png" alt="" />
+                  <img src="assets/images/post_img/angry.png" alt="" />
+                </div>
               </a>
               <a href="/" class="massage">
                 <i class="fa-regular fa-message"></i>
@@ -488,7 +500,6 @@
               </a>
             </div>
           </div>
-          <div class="separate"></div>
           <div class="comment_area center">
             <div class="comment_profile">
               <img src="assets/images/profile.png" alt="" />
@@ -539,10 +550,867 @@
               </ul>
             </div>
           </div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          repellat neque aut. Error est officia iste, odio tenetur dolorem
-          assumenda, rerum doloribus magni, illo soluta libero delectus animi
-          ratione. Eaque?
+        </div>
+        <!-- 2nd post -->
+        <div class="post_area">
+          <div class="post_title center">
+            <div class="post_profile center">
+              <div class="post_profile_img active_icon">
+                <img src="assets/images/post_img/nabiha_logo.jpg" alt="logo" />
+              </div>
+              <div class="post_profile_name">
+                <h4>Syeda Mymuna Nabiha</h4>
+                <p class="center">
+                  3d
+                  <span class="dot">.</span>
+                  <span class="material-symbols-outlined"> public </span>
+                </p>
+              </div>
+            </div>
+            <div class="post_icon center">
+              <i class="fa-solid fa-ellipsis"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="post_content">
+            <p>Eid mubarak</p>
+            <button class="translate_btn">See Translation</button>
+          </div>
+          <div class="post_img">
+            <img src="assets/images/post_img/nabiha_img.jpg" alt="" />
+          </div>
+          <div class="counting center">
+            <div class="like_counting center">
+              <div class="emoji center">
+                <img
+                  src="assets/images/post_img/like.png"
+                  alt=""
+                  class="like"
+                />
+                <img
+                  src="assets/images/post_img/love.png"
+                  alt=""
+                  class="love"
+                />
+                <img
+                  src="assets/images/post_img/care.png"
+                  alt=""
+                  class="care"
+                />
+              </div>
+              <p>You <span>, Lamiya Afroza</span> and 11 others</p>
+            </div>
+            <div class="comment_counting">
+              <p>20 comments</p>
+            </div>
+          </div>
+          <div class="like_area center">
+            <div class="like_icon center">
+              <a href="/" id="love_red" class="like_icon_tooltip">
+                <i class="fa-regular fa-thumbs-up"></i>
+                Like
+                <div class="like_tooltip center">
+                  <img src="assets/images/post_img/like.png" alt="" />
+                  <img src="assets/images/post_img/love.png" alt="" />
+                  <img src="assets/images/post_img/care.png" alt="" />
+                  <img src="assets/images/post_img/haha.png" alt="" />
+                  <img src="assets/images/post_img/wow.png" alt="" />
+                  <img src="assets/images/post_img/sad.png" alt="" />
+                  <img src="assets/images/post_img/angry.png" alt="" />
+                </div>
+              </a>
+              <a href="/" class="massage">
+                <i class="fa-regular fa-message"></i>
+                Comment
+              </a>
+              <a href="/">
+                <i class="fas fa-regular fa-share"></i>
+                Share
+              </a>
+            </div>
+            <div class="like_profile">
+              <a href="/" class="center">
+                <img src="assets/images/profile.png" alt="" />
+                <i class="fa-solid fa-sort-down"></i>
+              </a>
+            </div>
+          </div>
+          <div class="comment_area center">
+            <div class="comment_profile">
+              <img src="assets/images/profile.png" alt="" />
+            </div>
+            <div class="comment_box center">
+              <form action="/">
+                <input type="text" required placeholder="Write a comment..." />
+              </form>
+              <ul class="center">
+                <li>
+                  <a
+                    href="/"
+                    data-comment_tooltip="Comment with an avatar sticker"
+                  >
+                    <span class="material-symbols-outlined"> face_2 </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Insert an emoji">
+                    <span class="material-symbols-outlined">
+                      sentiment_satisfied
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Attach a photo or video">
+                    <span class="material-symbols-outlined">
+                      photo_camera
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="gif"
+                    data-comment_tooltip="Comment with a GIF"
+                  >
+                    <span class="material-symbols-outlined"> gif </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Comment with a Sticker">
+                    <span class="material-symbols-outlined">
+                      sticky_note_2
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd post -->
+        <div class="post_area">
+          <div class="post_title center">
+            <div class="post_profile center">
+              <div class="post_profile_img">
+                <img src="assets/images/post_img/sayed.jpg" alt="logo" />
+              </div>
+              <div class="post_profile_name">
+                <h4>Sheikh Sayed</h4>
+                <p class="center">
+                  June 23 at 3:323 PM
+                  <span class="dot">.</span>
+                  <span class="material-symbols-outlined"> public </span>
+                </p>
+              </div>
+            </div>
+            <div class="post_icon center">
+              <i class="fa-solid fa-ellipsis"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="post_content">
+            <p>হায়রে মানুষ এত অবুঝ,বুঝেও বোঝেনা</p>
+            <button class="translate_btn">See Translation</button>
+          </div>
+          <div class="post_img">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2FSheikhSayedKalarab%2Fvideos%2F1084302552975240%2F&show_text=false&width=560&t=0"
+              width="100%"
+              height="333"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            ></iframe>
+          </div>
+          <div class="counting center">
+            <div class="like_counting center">
+              <div class="emoji center">
+                <img
+                  src="assets/images/post_img/like.png"
+                  alt=""
+                  class="like"
+                />
+                <img
+                  src="assets/images/post_img/love.png"
+                  alt=""
+                  class="love"
+                />
+                <img
+                  src="assets/images/post_img/care.png"
+                  alt=""
+                  class="care"
+                />
+              </div>
+              <p>You <span>, Tasnim Ahmed</span> and 11 others</p>
+            </div>
+            <div class="comment_counting">
+              <p>2 comments</p>
+            </div>
+          </div>
+          <div class="like_area center">
+            <div class="like_icon center">
+              <a href="/" id="care_yellow" class="like_icon_tooltip">
+                <i class="fa-regular fa-thumbs-up"></i>
+                Like
+                <div class="like_tooltip center">
+                  <img src="assets/images/post_img/like.png" alt="" />
+                  <img src="assets/images/post_img/love.png" alt="" />
+                  <img src="assets/images/post_img/care.png" alt="" />
+                  <img src="assets/images/post_img/haha.png" alt="" />
+                  <img src="assets/images/post_img/wow.png" alt="" />
+                  <img src="assets/images/post_img/sad.png" alt="" />
+                  <img src="assets/images/post_img/angry.png" alt="" />
+                </div>
+              </a>
+              <a href="/" class="massage">
+                <i class="fa-regular fa-message"></i>
+                Comment
+              </a>
+              <a href="/">
+                <i class="fas fa-regular fa-share"></i>
+                Share
+              </a>
+            </div>
+            <div class="like_profile">
+              <a href="/" class="center">
+                <img src="assets/images/profile.png" alt="" />
+                <i class="fa-solid fa-sort-down"></i>
+              </a>
+            </div>
+          </div>
+          <div class="comment_area center">
+            <div class="comment_profile">
+              <img src="assets/images/profile.png" alt="" />
+            </div>
+            <div class="comment_box center">
+              <form action="/">
+                <input type="text" required placeholder="Write a comment..." />
+              </form>
+              <ul class="center">
+                <li>
+                  <a
+                    href="/"
+                    data-comment_tooltip="Comment with an avatar sticker"
+                  >
+                    <span class="material-symbols-outlined"> face_2 </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Insert an emoji">
+                    <span class="material-symbols-outlined">
+                      sentiment_satisfied
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Attach a photo or video">
+                    <span class="material-symbols-outlined">
+                      photo_camera
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="gif"
+                    data-comment_tooltip="Comment with a GIF"
+                  >
+                    <span class="material-symbols-outlined"> gif </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Comment with a Sticker">
+                    <span class="material-symbols-outlined">
+                      sticky_note_2
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 4th post -->
+        <div class="post_area">
+          <div class="post_title center">
+            <div class="post_profile center">
+              <div class="post_profile_img active_icon">
+                <img
+                  src="assets/images/post_img/shoikot_logo.jpg"
+                  alt="logo"
+                  class="story_active_effect"
+                />
+              </div>
+              <div class="post_profile_name">
+                <h4>MahfuZul Haque Shoykot</h4>
+                <p class="center">
+                  June 29 at 10:44 PM
+                  <span class="dot">.</span>
+                  <span class="material-symbols-outlined"> public </span>
+                </p>
+              </div>
+            </div>
+            <div class="post_icon center">
+              <i class="fa-solid fa-ellipsis"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="post_content">
+            <p></p>
+            <button class="translate_btn">See Translation</button>
+          </div>
+          <div class="post_img">
+            <img src="assets/images/post_img/shoykot_img.jpg" alt="" />
+          </div>
+          <div class="counting center">
+            <div class="like_counting center">
+              <div class="emoji center">
+                <img
+                  src="assets/images/post_img/like.png"
+                  alt=""
+                  class="like"
+                />
+                <img
+                  src="assets/images/post_img/love.png"
+                  alt=""
+                  class="love"
+                />
+                <img
+                  src="assets/images/post_img/care.png"
+                  alt=""
+                  class="care"
+                />
+              </div>
+              <p>Md<span>, Tahur Ahmed helali </span> and 11 others</p>
+            </div>
+            <div class="comment_counting">
+              <p>3 comments</p>
+            </div>
+          </div>
+          <div class="like_area center">
+            <div class="like_icon center">
+              <a href="/" class="like_icon_tooltip">
+                <i class="fa-regular fa-thumbs-up"></i>
+                Like
+                <div class="like_tooltip center">
+                  <img src="assets/images/post_img/like.png" alt="" />
+                  <img src="assets/images/post_img/love.png" alt="" />
+                  <img src="assets/images/post_img/care.png" alt="" />
+                  <img src="assets/images/post_img/haha.png" alt="" />
+                  <img src="assets/images/post_img/wow.png" alt="" />
+                  <img src="assets/images/post_img/sad.png" alt="" />
+                  <img src="assets/images/post_img/angry.png" alt="" />
+                </div>
+              </a>
+              <a href="/" class="massage">
+                <i class="fa-regular fa-message"></i>
+                Comment
+              </a>
+              <a href="/">
+                <i class="fas fa-regular fa-share"></i>
+                Share
+              </a>
+            </div>
+            <div class="like_profile">
+              <a href="/" class="center">
+                <img src="assets/images/profile.png" alt="" />
+                <i class="fa-solid fa-sort-down"></i>
+              </a>
+            </div>
+          </div>
+          <div class="comment_area center">
+            <div class="comment_profile">
+              <img src="assets/images/profile.png" alt="" />
+            </div>
+            <div class="comment_box center">
+              <form action="/">
+                <input type="text" required placeholder="Write a comment..." />
+              </form>
+              <ul class="center">
+                <li>
+                  <a
+                    href="/"
+                    data-comment_tooltip="Comment with an avatar sticker"
+                  >
+                    <span class="material-symbols-outlined"> face_2 </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Insert an emoji">
+                    <span class="material-symbols-outlined">
+                      sentiment_satisfied
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Attach a photo or video">
+                    <span class="material-symbols-outlined">
+                      photo_camera
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="gif"
+                    data-comment_tooltip="Comment with a GIF"
+                  >
+                    <span class="material-symbols-outlined"> gif </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Comment with a Sticker">
+                    <span class="material-symbols-outlined">
+                      sticky_note_2
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 5th post -->
+        <div class="post_area">
+          <div class="post_title center">
+            <div class="post_profile center">
+              <div class="post_profile_img">
+                <img
+                  src="assets/images/post_img/saifa.jpg"
+                  alt="logo"
+                  class="story_active_effect"
+                />
+              </div>
+              <div class="post_profile_name">
+                <h4>Suraiya Aktar Saifa</h4>
+                <p class="center">
+                  3d
+                  <span class="dot">.</span>
+                  <span class="material-symbols-outlined"> public </span>
+                </p>
+              </div>
+            </div>
+            <div class="post_icon center">
+              <i class="fa-solid fa-ellipsis"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="post_content">
+            <p>
+              মুবারক ঈদ মোবারক - সুরাইয়া আক্তার সাইফা <br /><br />
+              কথা (বাংলা) - কবির আল মামুন<br />
+              সুর - বাবু <br />
+              কম্পোজ - অণু মোস্তাফিজ<br />
+              ক্যামেরা - সি এম মামুন & আব্দুল্লাহ আল মামুন<br />
+              গ্রাফিক্স - আরাফাত মাহমুদ <br />
+              এডিট - মাহরুফ<br />
+              সহকারী পরিচালনা- আবদুল্লাহ আল মামুন<br />
+              পরিচালনা - মুজাহিদ জামা<br />
+            </p>
+            <button class="translate_btn">See Translation</button>
+          </div>
+          <div class="post_img">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fsaifaofficial%2Fvideos%2F648283043546031%2F&show_text=false&width=560&t=0"
+              width="100%"
+              height="333"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+          <div class="counting center">
+            <div class="like_counting center">
+              <div class="emoji center">
+                <img
+                  src="assets/images/post_img/like.png"
+                  alt=""
+                  class="like"
+                />
+                <img
+                  src="assets/images/post_img/love.png"
+                  alt=""
+                  class="love"
+                />
+                <img
+                  src="assets/images/post_img/care.png"
+                  alt=""
+                  class="care"
+                />
+              </div>
+              <p>1.7k</p>
+            </div>
+            <div class="comment_counting">
+              <p>124 comments</p>
+            </div>
+          </div>
+          <div class="like_area center">
+            <div class="like_icon center">
+              <a href="/" id="like_blue" class="like_icon_tooltip">
+                <i class="fa-regular fa-thumbs-up"></i>
+                Like
+                <div class="like_tooltip center">
+                  <img src="assets/images/post_img/like.png" alt="" />
+                  <img src="assets/images/post_img/love.png" alt="" />
+                  <img src="assets/images/post_img/care.png" alt="" />
+                  <img src="assets/images/post_img/haha.png" alt="" />
+                  <img src="assets/images/post_img/wow.png" alt="" />
+                  <img src="assets/images/post_img/sad.png" alt="" />
+                  <img src="assets/images/post_img/angry.png" alt="" />
+                </div>
+              </a>
+              <a href="/" class="massage">
+                <i class="fa-regular fa-message"></i>
+                Comment
+              </a>
+              <a href="/">
+                <i class="fas fa-regular fa-share"></i>
+                Share
+              </a>
+            </div>
+            <div class="like_profile">
+              <a href="/" class="center">
+                <img src="assets/images/profile.png" alt="" />
+                <i class="fa-solid fa-sort-down"></i>
+              </a>
+            </div>
+          </div>
+          <div class="comment_area center">
+            <div class="comment_profile">
+              <img src="assets/images/profile.png" alt="" />
+            </div>
+            <div class="comment_box center">
+              <form action="/">
+                <input type="text" required placeholder="Write a comment..." />
+              </form>
+              <ul class="center">
+                <li>
+                  <a
+                    href="/"
+                    data-comment_tooltip="Comment with an avatar sticker"
+                  >
+                    <span class="material-symbols-outlined"> face_2 </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Insert an emoji">
+                    <span class="material-symbols-outlined">
+                      sentiment_satisfied
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Attach a photo or video">
+                    <span class="material-symbols-outlined">
+                      photo_camera
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="gif"
+                    data-comment_tooltip="Comment with a GIF"
+                  >
+                    <span class="material-symbols-outlined"> gif </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Comment with a Sticker">
+                    <span class="material-symbols-outlined">
+                      sticky_note_2
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 6th post -->
+        <div class="post_area">
+          <div class="post_title center">
+            <div class="post_profile center">
+              <div class="post_profile_img">
+                <img
+                  src="assets/images/post_img/didarul_logo.jpg"
+                  alt="logo"
+                />
+              </div>
+              <div class="post_profile_name">
+                <h4>Didarul Islam</h4>
+                <p class="center">
+                  2d
+                  <span class="dot">.</span>
+                  <span class="material-symbols-outlined"> public </span>
+                </p>
+              </div>
+            </div>
+            <div class="post_icon center">
+              <i class="fa-solid fa-ellipsis"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="post_content">
+            <p>
+              রাতের হাতিরঝিল।
+            </p>
+            <button class="translate_btn">See Translation</button>
+          </div>
+          <div class="post_img">
+            <img src="assets/images/post_img/didarul_img.jpg" alt="" />
+          </div>
+          <div class="counting center">
+            <div class="like_counting center">
+              <div class="emoji center">
+                <img
+                  src="assets/images/post_img/like.png"
+                  alt=""
+                  class="like"
+                />
+                <img
+                  src="assets/images/post_img/love.png"
+                  alt=""
+                  class="love"
+                />
+                <img
+                  src="assets/images/post_img/care.png"
+                  alt=""
+                  class="care"
+                />
+              </div>
+              <p>2.2k</p>
+            </div>
+            <div class="comment_counting">
+              <p>58 comments</p>
+            </div>
+          </div>
+          <div class="like_area center">
+            <div class="like_icon center">
+              <a href="/" id="like_blue" class="like_icon_tooltip">
+                <i class="fa-regular fa-thumbs-up"></i>
+                Like
+                <div class="like_tooltip center">
+                  <img src="assets/images/post_img/like.png" alt="" />
+                  <img src="assets/images/post_img/love.png" alt="" />
+                  <img src="assets/images/post_img/care.png" alt="" />
+                  <img src="assets/images/post_img/haha.png" alt="" />
+                  <img src="assets/images/post_img/wow.png" alt="" />
+                  <img src="assets/images/post_img/sad.png" alt="" />
+                  <img src="assets/images/post_img/angry.png" alt="" />
+                </div>
+              </a>
+              <a href="/" class="massage">
+                <i class="fa-regular fa-message"></i>
+                Comment
+              </a>
+              <a href="/">
+                <i class="fas fa-regular fa-share"></i>
+                Share
+              </a>
+            </div>
+            <div class="like_profile">
+              <a href="/" class="center">
+                <img src="assets/images/profile.png" alt="" />
+                <i class="fa-solid fa-sort-down"></i>
+              </a>
+            </div>
+          </div>
+          <div class="comment_area center">
+            <div class="comment_profile">
+              <img src="assets/images/profile.png" alt="" />
+            </div>
+            <div class="comment_box center">
+              <form action="/">
+                <input type="text" required placeholder="Write a comment..." />
+              </form>
+              <ul class="center">
+                <li>
+                  <a
+                    href="/"
+                    data-comment_tooltip="Comment with an avatar sticker"
+                  >
+                    <span class="material-symbols-outlined"> face_2 </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Insert an emoji">
+                    <span class="material-symbols-outlined">
+                      sentiment_satisfied
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Attach a photo or video">
+                    <span class="material-symbols-outlined">
+                      photo_camera
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="gif"
+                    data-comment_tooltip="Comment with a GIF"
+                  >
+                    <span class="material-symbols-outlined"> gif </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Comment with a Sticker">
+                    <span class="material-symbols-outlined">
+                      sticky_note_2
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 7th post -->
+        <div class="post_area">
+          <div class="post_title center">
+            <div class="post_profile center">
+              <div class="post_profile_img active_icon">
+                <img
+                  src="assets/images/post_img/riyad_logo.jpg"
+                  alt="logo"
+                  class="story_active_effect"
+                />
+              </div>
+              <div class="post_profile_name">
+                <h4>Riyad Salehin</h4>
+                <p class="center">
+                  2d
+                  <span class="dot">.</span>
+                  <span class="material-symbols-outlined"> public </span>
+                </p>
+              </div>
+            </div>
+            <div class="post_icon center">
+              <i class="fa-solid fa-ellipsis"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="post_content">
+            <p>
+              আত্বত্যাগের সুন্দর নিদর্শন পবিত্র ঈদুল আজহা উপলক্ষে সবাইকে জানাই শুভেচ্ছা।
+              ত্যাগের মহিমায় উদ্ভাসিত হোক পবিত্র ঈদ-উল-আযহা <br><br>
+             ঈদ মুবারাক🌙🌸<br>
+             তাক্বাব্বালাল্লাহু মিন্না ওয়া মিনকুম!🌺💗🥰
+            </p>
+            <button class="translate_btn">See Translation</button>
+          </div>
+          <div class="post_img">
+            <img src="assets/images/post_img/riyad_img.jpg" alt="" />
+          </div>
+          <div class="counting center">
+            <div class="like_counting center">
+              <div class="emoji center">
+                <img
+                  src="assets/images/post_img/like.png"
+                  alt=""
+                  class="like"
+                />
+                <img
+                  src="assets/images/post_img/love.png"
+                  alt=""
+                  class="love"
+                />
+                <img
+                  src="assets/images/post_img/care.png"
+                  alt=""
+                  class="care"
+                />
+              </div>
+              <p>You <span>, Selim Reza</span> and 222 others</p>
+            </div>
+            <div class="comment_counting">
+              <p>28 comments</p>
+            </div>
+          </div>
+          <div class="like_area center">
+            <div class="like_icon center">
+              <a href="/" id="love_red" class="like_icon_tooltip">
+                <i class="fa-regular fa-thumbs-up"></i>
+                Like
+                <div class="like_tooltip center">
+                  <img src="assets/images/post_img/like.png" alt="" />
+                  <img src="assets/images/post_img/love.png" alt="" />
+                  <img src="assets/images/post_img/care.png" alt="" />
+                  <img src="assets/images/post_img/haha.png" alt="" />
+                  <img src="assets/images/post_img/wow.png" alt="" />
+                  <img src="assets/images/post_img/sad.png" alt="" />
+                  <img src="assets/images/post_img/angry.png" alt="" />
+                </div>
+              </a>
+              <a href="/" class="massage">
+                <i class="fa-regular fa-message"></i>
+                Comment
+              </a>
+              <a href="/">
+                <i class="fas fa-regular fa-share"></i>
+                Share
+              </a>
+            </div>
+            <div class="like_profile">
+              <a href="/" class="center">
+                <img src="assets/images/profile.png" alt="" />
+                <i class="fa-solid fa-sort-down"></i>
+              </a>
+            </div>
+          </div>
+          <div class="comment_area center">
+            <div class="comment_profile">
+              <img src="assets/images/profile.png" alt="" />
+            </div>
+            <div class="comment_box center">
+              <form action="/">
+                <input type="text" required placeholder="Write a comment..." />
+              </form>
+              <ul class="center">
+                <li>
+                  <a
+                    href="/"
+                    data-comment_tooltip="Comment with an avatar sticker"
+                  >
+                    <span class="material-symbols-outlined"> face_2 </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Insert an emoji">
+                    <span class="material-symbols-outlined">
+                      sentiment_satisfied
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Attach a photo or video">
+                    <span class="material-symbols-outlined">
+                      photo_camera
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    class="gif"
+                    data-comment_tooltip="Comment with a GIF"
+                  >
+                    <span class="material-symbols-outlined"> gif </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" data-comment_tooltip="Comment with a Sticker">
+                    <span class="material-symbols-outlined">
+                      sticky_note_2
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <aside class="right_side">
