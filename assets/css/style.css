@@ -794,22 +794,26 @@ main {
 .post_area .like_area .like_icon a .like_tooltip {
   column-gap: 5px;
   position: absolute;
-  top: -50px;
+  bottom:-50px ;
   left: 0px;
   z-index: 3;
   background-color: #ffffff;
   padding: 5px;
   border-radius: 25px;
   box-shadow: 0px 0px 3px #00000067;
-  display: none;
   white-space: nowrap;
+  transition: all 0.5s;
+  transition-delay:0.6s;
+  z-index: -5;
 }
 .post_area .like_area .like_icon a .like_tooltip img {
   height: 36px;
   width: 36px;
 }
 .post_area .like_area .like_icon a.like_icon_tooltip:hover .like_tooltip {
-  display: block;
+  bottom: 35px;
+  left: 0;
+  z-index: 5;
 }
 .post_area .like_area .like_icon a:hover {
   background-color: #f2f2f2;
